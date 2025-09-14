@@ -1,0 +1,11 @@
+{
+  "name": "@app/package-a",
+  "main": "dist/index.js",
+  "typings": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc --build"
+  },
+  "dependencies": {
+    "@app/db": "workspace:*"
+  }
+}

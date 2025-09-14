@@ -1,0 +1,20 @@
+{
+  "name": "prisma-issue",
+  "private": true,
+  "scripts": {
+    "dev": "turbo run dev",
+    "build": "turbo run build",
+    "prebuild": "rm -rf ./packages/**/dist",
+    "fmt": "prettier --write \"**/*.{ts,tsx,md,json}\"",
+    "db:generate": "pnpm --filter=@app/db generate"
+  },
+  "devDependencies": {
+    "prettier": "3.6.2",
+    "turbo": "2.5.6",
+    "typescript": "5.9.2"
+  },
+  "packageManager": "pnpm@10.15.1",
+  "pnpm": {
+    "neverBuiltDependencies": []
+  }
+}

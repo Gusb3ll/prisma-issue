@@ -1,0 +1,20 @@
+{
+  "name": "@app/db",
+  "main": "dist/index.js",
+  "typings": "dist/index.d.ts",
+  "scripts": {
+    "build": "pnpm generate && tsc --build",
+    "push": "prisma db push",
+    "studio": "prisma studio",
+    "generate": "prisma generate"
+  },
+  "dependencies": {
+    "@prisma/adapter-pg": "6.16.1",
+    "@prisma/client": "6.16.1",
+    "pg": "8.16.3"
+  },
+  "devDependencies": {
+    "@types/pg": "8.15.5",
+    "prisma": "6.16.1"
+  }
+}
